@@ -1,51 +1,23 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import photos from "../../data";
+import "./style.css";
 
-class Featured extends Component {
-    constructor(props) {
-        super(props);
 
-    }
+function Featured(){
+    const [firstUrl, secondUrl] = photos;
 
-    componentWillMount() {
-
-    }
-
-    componentDidMount() {
-
-    }
-
-    componentWillReceiveProps(nextProps) {
-
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-
-    }
-
-    componentWillUpdate(nextProps, nextState) {
-
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-
-    }
-
-    componentWillUnmount() {
-
-    }
-
-    render() {
-        return (
-            <div>
-
-            </div>
-        );
-    }
+    return (
+        <section className="featured-section">
+            <div className="featured-row-layout">
+                <h6>green</h6>
+                <img src={firstUrl}/>
+            </div>{/*가로 */}
+            <div className="featured-column-layout">
+                <h6>lily</h6>  
+                <img src={secondUrl}/>  
+            </div>{/*세로 */}
+        </section>
+    );
 }
-
-Featured.propTypes = {
-
-};
 
 export default Featured;

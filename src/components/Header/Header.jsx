@@ -1,51 +1,19 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect, useRef, useState } from 'react';
+import "./style.css";
 
-class Header extends Component {
-    constructor(props) {
-        super(props);
+function Header(){
 
-    }
-
-    componentWillMount() {
-
-    }
-
-    componentDidMount() {
-
-    }
-
-    componentWillReceiveProps(nextProps) {
-
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-
-    }
-
-    componentWillUpdate(nextProps, nextState) {
-
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-
-    }
-
-    componentWillUnmount() {
-
-    }
-
-    render() {
-        return (
-            <div>
-
-            </div>
-        );
-    }
+    return (
+        <section className="header-container">
+            <ul className="header-menu">
+                <li>Intro</li>
+                <li>About</li>
+                <li>Featured</li>
+            </ul>
+            <h1 id="header-text">Art Objects</h1>
+        </section>
+    );
 }
 
-Header.propTypes = {
-
-};
 
 export default Header;
